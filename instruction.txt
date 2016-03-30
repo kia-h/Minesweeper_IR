@@ -1,0 +1,27 @@
+Instruction on how to run the program:
+
+1- go to the source code directory : $cd ir
+2- compile the java files: $ javac *.java
+3- run the main program: $java Main
+
+you have 3 options: 1- enter inputs from console/terminal
+					2- provide an input file name, which needs to be in same directory as other java files
+					3- exit
+
+option 1: 
+	in this option, user will be asked to enter size of the board then the data for each field. 
+	valid input for size are positive integer (0-100).
+	valid entry for field status are either . or *
+	. means a safe field and * means mined field. other characters will be interpreted as . or safe field.
+	after program finishes reading the data as much as the board size, then it prints out the revealed board
+	with the mined fields shown in * and their adjacent fields with a number. 
+	number means the amount of the mined fields next to that safe field.
+
+option 2:
+	if user selects this option, program asks for a input data file, which needs to be in the same directory as the other java files.
+	it then reads the file contents and prints out the result board. it also write the result board to a file in the same directory.
+
+other notes: 
+	* sample data files has been provided: mines.txt
+	* in option 2, output file name is: result.txt
+	
